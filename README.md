@@ -1,5 +1,7 @@
 # Net-a-Porter x Gucci campaign homepage background
 
+![Net-a-Porter x Gucci](gucci-nap.png)
+
 I thought it looked cute so I took it. N-A-P is using an iFrame on their homepage to display the html canvas with the flowers/birds, take that as you will.
 
 See [Net-a-Porter](https://www.net-a-porter.com/) for it live idk.
