@@ -20,7 +20,7 @@ Then just go to http://localhost:8000 in your browser of choice.
 
 # Todo
 
-Get that snake in there! (it's a video being displayed on another canvas element, shouldn't be too hard.)
+Get that snake and the butterfly in there! (it's a video being displayed on another canvas element, shouldn't be too hard.)
 
 # Contributing
 
