@@ -28,4 +28,4 @@ If you want, I guess?
 
 # Update 5/12
 
-N-A-P got rid of these illustrations on their homepage and I only had the snake cached on my browser :( Added that in today and waiting for way back machine to release a new snapshot from earlier this week so I can get the file names of the rest of the assets. 
+N-A-P got rid of these illustrations on their homepage and I only had the snake cached on my browser 😩 Added that in today and waiting for way back machine to release a new snapshot from earlier this week so I can get the file names of the rest of the assets. 
