@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="https://raw.githubusercontent.com/zonika/gucci/master/front.js"></script>
+<script>
+	var canvas, stage, exportRoot;
+	function init() {
+
+		front = document.getElementById("front");
+		images = images||{};
+		ss = ss||{};
+
+		var loader = new createjs.LoadQueue(false);
+		loader.addEventListener("fileload", handleFileLoad);
+		loader.addEventListener("complete", handleComplete);
+		loader.loadFile({src:"https://raw.githubusercontent.com/zonika/gucci/master/for-codepen/front.json", type:"spritesheet", id:"HPTO_Announcement_VA_V1_Front_Animated_atlas_"}, true);
+		loader.loadManifest(lib.properties.manifest);
+	}
+
+	function handleFileLoad(evt) {
+		if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+	}
+
+	function handleComplete(evt) {
+		var queue = evt.target;
+		ss["HPTO_Announcement_VA_V1_Front_Animated_atlas_"] = queue.getResult("HPTO_Announcement_VA_V1_Front_Animated_atlas_");
+		exportRootFront = new lib.HPTO_Announcement_VA_V1_Front_Animated();
+
+
+		stageFront = new createjs.Stage(front);
+		stageFront.addChild(exportRootFront);
+		stageFront.update();
+
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stageFront);
+
+	}
+</script>
+
+</head>
+	<body onload="init();" style="margin:0px;">
+		<canvas id="front" width="1920" height="1080"></canvas>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="https://raw.githubusercontent.com/zonika/gucci/master/butterfly/butterfly.js"></script>
+<script>
+var canvas, stage, exportRoot;
+function init() {
+	// --- write your JS code here ---
+
+	createjs.MotionGuidePlugin.install();
+
+	canvas = document.getElementById("canvas");
+	images = images||{};
+	ss = ss||{};
+
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadFile({src:"https://raw.githubusercontent.com/zonika/gucci/master/for-codepen/butterfly.json", type:"spritesheet", id:"Homepage_Butterfly_2_atlas_"}, true);
+	loader.loadManifest(lib.properties.manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete(evt) {
+	var queue = evt.target;
+	ss["Homepage_Butterfly_2_atlas_"] = queue.getResult("Homepage_Butterfly_2_atlas_");
+	exportRoot = new lib.Homepage_Butterfly_2();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+
+</script>
+
+<!-- write your code here -->
+
+</head>
+<body onload="init();" style="margin:0px;">
+	<canvas id="canvas" width="1920" height="1080" ></canvas>
+</body>
+</html>
