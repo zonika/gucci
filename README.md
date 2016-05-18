@@ -8,7 +8,7 @@ See [Net-a-Porter](https://www.net-a-porter.com/) for it live idk. (UPDATE 5/12:
 
 # Preview
 
-I wanted to put a live preview on codepen but I don't have a premium account and codepen is smart enough to block iFrames with outside sources and only premium accounts can upload assets so I'll leave you with this gif I made of the page live.
+I wanted to put a live preview on codepen but I don't have a premium account and codepen is smart enough to block iFrames with outside sources and only premium accounts can upload assets so I'll leave you with this shitty gif I made of the page live.
 
 ![Gucci Preview](preview.gif)
 
