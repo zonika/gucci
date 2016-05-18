@@ -6,6 +6,12 @@ I thought it looked cute so I took it. N-A-P is using an iFrame on their homepag
 
 See [Net-a-Porter](https://www.net-a-porter.com/) for it live idk. (UPDATE 5/12: this feature is no longer live. It can now be found on the [Wayback Machine](https://web.archive.org/web/20160508032219/https://www.net-a-porter.com/))
 
+# Preview
+
+I wanted to put a live preview on codepen but I don't have a premium account and codepen is smart enough to block iFrames with outside sources and only premium accounts can upload assets so I'll leave you with this gif I made.
+
+![Gucci Preview](preview.gif)
+
 # To run
 
 Because of the createjs loader that's getting the json file, the page won't work if you open index.html from your local file system. So set up a local server.
